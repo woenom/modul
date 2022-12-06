@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+var plus = confirm('Вы хотите выполнить сложение?');
+if(plus==true){
+  var a = prompt('Введите число a');
+  var b = prompt('Введите число b');
+  var c = prompt('Введите число модуль');
+  var result = Number(a)+Number(b);
+  result = result%c;
+  document.write(a+' + '+b+' = '+result+' (В модуле '+c+' )');
+}
+else if(plus==false){
+var multi = confirm('Вы хотите выполнить умножение?');
+if(multi==true){
+  var a = prompt('Введите число a');
+  var b = prompt('Введите число b');
+  var c = prompt('Введите число модуль');
+  var result = Number(a)*Number(b);
+  result = result%c;
+  document.write(a+' * '+b+' = '+result+' (В модуле '+c+' )');
+}
+}
+if(multi==false){
+var pow = confirm('Вы хотите выполнить возведение в степень?');
+if(pow==true){
+  var a = prompt('Введите число a');
+  var b = prompt('Введите число b');
+  var c = prompt('Введите число модуль');
+  var result = Math.pow(Number(a),Number(b));
+  result = result%c;
+  document.write(a+' в степени '+b+' = '+result+' (В модуле '+c+' )');
+}
+}
+if(pow==false){
+  document.write("Операция прервана");
+}
+</script>
+</body>
+</html>
